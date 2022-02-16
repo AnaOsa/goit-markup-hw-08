@@ -1,0 +1,36 @@
+.backdrop {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity $animation-duration $animation-timing-function,
+        visibility $animation-duration $animation-timing-function;
+}
+.backdrop.backdrop--is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.backdrop.backdrop--is-hidden .modal-form__wrap {
+    transform: translate(-50%, -50%) scale(2);
+}
+.modal-form__wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 528px;
+    min-height: 581px;
+    padding: 40px;
+
+    background-color: $primary-bg;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $animation-duration $animation-timing-function;
+}
