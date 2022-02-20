@@ -773,10 +773,6 @@ img {
   color: #ffffff;
 }
 
-.page-footer__icons-wrap {
-  margin-right: 93px;
-}
-
 .page-footer__text, .footer-form__text {
   margin-top: 0;
   margin-bottom: 20px;
@@ -785,6 +781,10 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.footer-form {
+  margin-left: auto;
 }
 
 .footer-form__inner {
