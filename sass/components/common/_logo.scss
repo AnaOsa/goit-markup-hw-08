@@ -1,9 +1,6 @@
 .logo {
     font-family: $secondary-font;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include font(26px, 700, 31px, null);
     color: $accent-color;
 }
 .logo__dark {
@@ -12,6 +9,6 @@
 .logo__light {
     color: $secondary-text-color;
 }
-.page-header__logo {
-    margin-right: 93px;
-}
+// .page-header__logo {
+//     margin-right: 93px;
+// }
